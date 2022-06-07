@@ -9,23 +9,28 @@ import UIKit
 
 class AlbumViewController: UIViewController {
 
-    // MARK: - set views
+    // MARK: - Set elements
 
     private lazy var albumCollectionView: UICollectionView = {
         let album = UICollectionView()
 
 
-return album
+        return album
     }()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupView()
+
+    }
+
+    // MARK: - Setup View
+    private func setupView() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Альбомы"
     }
-
 
 }

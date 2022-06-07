@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D037DE466CC19F04BF4EF6F /* Pods_IOS6_HW14_DmitryDorodniy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319A2AB271BD914A9523243F /* Pods_IOS6_HW14_DmitryDorodniy.framework */; };
 		8A795BFC284F65E800E25085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795BFB284F65E800E25085 /* AppDelegate.swift */; };
 		8A795C00284F65E800E25085 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795BFF284F65E800E25085 /* ViewController.swift */; };
 		8A795C05284F65EA00E25085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A795C04284F65EA00E25085 /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27483A3E1272A85E6A601D14 /* Pods-IOS6-HW14-DmitryDorodniy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS6-HW14-DmitryDorodniy.release.xcconfig"; path = "Target Support Files/Pods-IOS6-HW14-DmitryDorodniy/Pods-IOS6-HW14-DmitryDorodniy.release.xcconfig"; sourceTree = "<group>"; };
+		319A2AB271BD914A9523243F /* Pods_IOS6_HW14_DmitryDorodniy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS6_HW14_DmitryDorodniy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A795BF8284F65E800E25085 /* IOS6-HW14-DmitryDorodniy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS6-HW14-DmitryDorodniy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A795BFB284F65E800E25085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A795BFF284F65E800E25085 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		8A795C17284F707A00E25085 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
 		8A795C19284F712700E25085 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		8A795C1B284F722400E25085 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B8662DBAB2E9AC27410DCFF5 /* Pods-IOS6-HW14-DmitryDorodniy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS6-HW14-DmitryDorodniy.debug.xcconfig"; path = "Target Support Files/Pods-IOS6-HW14-DmitryDorodniy/Pods-IOS6-HW14-DmitryDorodniy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D037DE466CC19F04BF4EF6F /* Pods_IOS6_HW14_DmitryDorodniy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ABD4FEB605986060D6515CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8662DBAB2E9AC27410DCFF5 /* Pods-IOS6-HW14-DmitryDorodniy.debug.xcconfig */,
+				27483A3E1272A85E6A601D14 /* Pods-IOS6-HW14-DmitryDorodniy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8A795BEF284F65E800E25085 = {
 			isa = PBXGroup;
 			children = (
 				8A795BFA284F65E800E25085 /* IOS6-HW14-DmitryDorodniy */,
 				8A795BF9284F65E800E25085 /* Products */,
+				7ABD4FEB605986060D6515CF /* Pods */,
+				F7AB6F67302600AACC0F864A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +138,14 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		F7AB6F67302600AACC0F864A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				319A2AB271BD914A9523243F /* Pods_IOS6_HW14_DmitryDorodniy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A795C0C284F65EA00E25085 /* Build configuration list for PBXNativeTarget "IOS6-HW14-DmitryDorodniy" */;
 			buildPhases = (
+				E380DACF1374DAFD039E65B8 /* [CP] Check Pods Manifest.lock */,
 				8A795BF4284F65E800E25085 /* Sources */,
 				8A795BF5284F65E800E25085 /* Frameworks */,
 				8A795BF6284F65E800E25085 /* Resources */,
+				1CCD15F69B81617816507E03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +212,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CCD15F69B81617816507E03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS6-HW14-DmitryDorodniy/Pods-IOS6-HW14-DmitryDorodniy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOS6-HW14-DmitryDorodniy/Pods-IOS6-HW14-DmitryDorodniy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS6-HW14-DmitryDorodniy/Pods-IOS6-HW14-DmitryDorodniy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E380DACF1374DAFD039E65B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOS6-HW14-DmitryDorodniy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A795BF4284F65E800E25085 /* Sources */ = {
@@ -330,6 +399,7 @@
 		};
 		8A795C0D284F65EA00E25085 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8662DBAB2E9AC27410DCFF5 /* Pods-IOS6-HW14-DmitryDorodniy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -357,6 +427,7 @@
 		};
 		8A795C0E284F65EA00E25085 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27483A3E1272A85E6A601D14 /* Pods-IOS6-HW14-DmitryDorodniy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
