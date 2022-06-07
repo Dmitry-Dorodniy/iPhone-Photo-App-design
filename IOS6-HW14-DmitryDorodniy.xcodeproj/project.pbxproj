@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		8A795BFC284F65E800E25085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795BFB284F65E800E25085 /* AppDelegate.swift */; };
-		8A795BFE284F65E800E25085 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795BFD284F65E800E25085 /* SceneDelegate.swift */; };
 		8A795C00284F65E800E25085 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795BFF284F65E800E25085 /* ViewController.swift */; };
-		8A795C03284F65E800E25085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A795C01284F65E800E25085 /* Main.storyboard */; };
 		8A795C05284F65EA00E25085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A795C04284F65EA00E25085 /* Assets.xcassets */; };
 		8A795C08284F65EA00E25085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A795C06284F65EA00E25085 /* LaunchScreen.storyboard */; };
+		8A795C16284F699700E25085 /* MediaLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795C15284F699700E25085 /* MediaLibraryViewController.swift */; };
+		8A795C18284F707A00E25085 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795C17284F707A00E25085 /* ForYouViewController.swift */; };
+		8A795C1A284F712700E25085 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795C19284F712700E25085 /* AlbumViewController.swift */; };
+		8A795C1C284F722400E25085 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A795C1B284F722400E25085 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A795BF8284F65E800E25085 /* IOS6-HW14-DmitryDorodniy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS6-HW14-DmitryDorodniy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A795BFB284F65E800E25085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A795BFD284F65E800E25085 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8A795BFF284F65E800E25085 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A795C02284F65E800E25085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A795C04284F65EA00E25085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A795C07284F65EA00E25085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A795C09284F65EA00E25085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A795C15284F699700E25085 /* MediaLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryViewController.swift; sourceTree = "<group>"; };
+		8A795C17284F707A00E25085 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
+		8A795C19284F712700E25085 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		8A795C1B284F722400E25085 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		8A795BFA284F65E800E25085 /* IOS6-HW14-DmitryDorodniy */ = {
 			isa = PBXGroup;
 			children = (
-				8A795BFB284F65E800E25085 /* AppDelegate.swift */,
-				8A795BFD284F65E800E25085 /* SceneDelegate.swift */,
-				8A795BFF284F65E800E25085 /* ViewController.swift */,
-				8A795C01284F65E800E25085 /* Main.storyboard */,
-				8A795C04284F65EA00E25085 /* Assets.xcassets */,
-				8A795C06284F65EA00E25085 /* LaunchScreen.storyboard */,
 				8A795C09284F65EA00E25085 /* Info.plist */,
+				8A795C0F284F66CE00E25085 /* Resources */,
+				8A795C12284F671600E25085 /* Sources */,
 			);
 			path = "IOS6-HW14-DmitryDorodniy";
+			sourceTree = "<group>";
+		};
+		8A795C0F284F66CE00E25085 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A795C10284F66E200E25085 /* Configs */,
+				8A795C11284F66F500E25085 /* Storyboards */,
+				8A795C04284F65EA00E25085 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A795C10284F66E200E25085 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		8A795C11284F66F500E25085 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A795C06284F65EA00E25085 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8A795C12284F671600E25085 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8A795C13284F672000E25085 /* App */,
+				8A795C14284F672D00E25085 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8A795C13284F672000E25085 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A795BFB284F65E800E25085 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A795C14284F672D00E25085 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8A795BFF284F65E800E25085 /* ViewController.swift */,
+				8A795C15284F699700E25085 /* MediaLibraryViewController.swift */,
+				8A795C17284F707A00E25085 /* ForYouViewController.swift */,
+				8A795C19284F712700E25085 /* AlbumViewController.swift */,
+				8A795C1B284F722400E25085 /* SearchViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +181,6 @@
 			files = (
 				8A795C08284F65EA00E25085 /* LaunchScreen.storyboard in Resources */,
 				8A795C05284F65EA00E25085 /* Assets.xcassets in Resources */,
-				8A795C03284F65E800E25085 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +191,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A795C1C284F722400E25085 /* SearchViewController.swift in Sources */,
+				8A795C18284F707A00E25085 /* ForYouViewController.swift in Sources */,
+				8A795C1A284F712700E25085 /* AlbumViewController.swift in Sources */,
 				8A795C00284F65E800E25085 /* ViewController.swift in Sources */,
+				8A795C16284F699700E25085 /* MediaLibraryViewController.swift in Sources */,
 				8A795BFC284F65E800E25085 /* AppDelegate.swift in Sources */,
-				8A795BFE284F65E800E25085 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8A795C01284F65E800E25085 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A795C02284F65E800E25085 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A795C06284F65EA00E25085 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +340,6 @@
 				INFOPLIST_FILE = "IOS6-HW14-DmitryDorodniy/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +351,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +367,6 @@
 				INFOPLIST_FILE = "IOS6-HW14-DmitryDorodniy/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +378,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
