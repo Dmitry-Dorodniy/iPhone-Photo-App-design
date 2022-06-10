@@ -11,7 +11,7 @@ class TextTableViewCell: UITableViewCell {
     static let reuseIdentifier = "TextTableViewCell"
 
 
-    func configure(with model: TableCell) {
+    func configure(with model: Cell) {
         var content = self.defaultContentConfiguration()
         let image = UIImage(systemName: model.image)
 
