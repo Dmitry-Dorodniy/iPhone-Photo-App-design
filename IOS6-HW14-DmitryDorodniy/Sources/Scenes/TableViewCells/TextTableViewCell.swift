@@ -10,15 +10,15 @@ import UIKit
 class TextTableViewCell: UITableViewCell {
     static let reuseIdentifier = "TextTableViewCell"
 
-
     func configure(with model: Cell) {
-        var content = self.defaultContentConfiguration()
+
         let image = UIImage(systemName: model.image)
 
-//        content.imageProperties.tintColor =
-        content.imageProperties.maximumSize = CGSize(width: 20, height: 20)
+        var content = self.defaultContentConfiguration()
+        content.imageProperties.maximumSize = CGSize(width: 25, height: 25)
         content.image = image
         content.textProperties.color = .systemBlue
+        content.textProperties.font = .systemFont(ofSize: 20)
         content.text = model.title
         content.secondaryText = String(model.detail)
 
@@ -27,7 +27,6 @@ class TextTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .value1, reuseIdentifier: reuseIdentifier)
-
     }
 
     required init?(coder: NSCoder) {

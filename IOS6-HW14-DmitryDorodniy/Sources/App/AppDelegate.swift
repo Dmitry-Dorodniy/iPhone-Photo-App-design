@@ -42,11 +42,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mediaLibraryViewController.tabBarItem = UITabBarItem(title: "Медиатека",
                                                              image: UIImage(systemName: "photo.fill.on.rectangle.fill"),
                                                              tag: 0)
+        let mediaNavigationViewController = UINavigationController(rootViewController: mediaLibraryViewController)
 
         let forYouViewController = ForYouViewController()
         forYouViewController.tabBarItem = UITabBarItem(title: "Для Вас",
                                                        image: UIImage(systemName: "heart.text.square.fill"),
                                                        tag: 1)
+        let forYouNavigationViewController = UINavigationController(rootViewController: forYouViewController)
+
         
         let albumViewController = AlbumViewController()
         albumViewController.tabBarItem = UITabBarItem(title: "Альбомы",
@@ -59,12 +62,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         searchViewController.tabBarItem = UITabBarItem(title: "Поиск",
                                                        image: UIImage(systemName: "magnifyingglass"),
                                                        tag: 3)
+        let searchNavigationViewController = UINavigationController(rootViewController: searchViewController)
 
         tabBarController.setViewControllers([
-            mediaLibraryViewController,
-            forYouViewController,
+            mediaNavigationViewController,
+            forYouNavigationViewController,
             albumNavigationViewController,
-            searchViewController], animated: true)
+            searchNavigationViewController], animated: true)
 
         window?.rootViewController = tabBarController
     }
