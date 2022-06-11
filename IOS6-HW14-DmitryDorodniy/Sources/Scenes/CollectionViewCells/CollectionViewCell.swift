@@ -7,8 +7,8 @@
 
 import UIKit
 
-class FirstCollectionViewCell: UICollectionViewCell {
-static let identifier = "FirstCollectionViewCell"
+class CollectionViewCell: UICollectionViewCell {
+static let identifier = "CollectionViewCell"
     
 //    @IBOutlet var imageView: UIImageView!
 
@@ -36,14 +36,6 @@ static let identifier = "FirstCollectionViewCell"
         return label
     }()
 
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        imageView.contentMode = .scaleAspectFill
-//        imageView.layer.masksToBounds = true
-//        imageView.layer.cornerRadius = 4
-//        // Initialization code
-//    }
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(imageView)
@@ -51,11 +43,10 @@ static let identifier = "FirstCollectionViewCell"
         contentView.addSubview(detailLabel)
     }
 
-    
-    public func configure(with image: UIImage) {
-        imageView.image = image
-        titleLabel.text = "Photos"
-        detailLabel.text = "123"
+    public func configure(with cell: Cell) {
+        imageView.image = UIImage(named: cell.image)
+        titleLabel.text = cell.title
+        detailLabel.text = String(cell.detail)
     }
 
     override func layoutSubviews() {
@@ -88,7 +79,7 @@ static let identifier = "FirstCollectionViewCell"
     }
 
 //    static func nib() -> UINib {
-//return UINib(nibName: "FirstCollectionViewCell", bundle: nil)
+//return UINib(nibName: "CollectionViewCell", bundle: nil)
 //    }
 
 }
