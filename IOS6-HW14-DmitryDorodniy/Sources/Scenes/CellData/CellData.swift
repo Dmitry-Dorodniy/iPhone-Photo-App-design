@@ -66,6 +66,7 @@ let cellSecondColletionData = CellApi.getCollectionSecondCellData()
 
 enum Metric {
     static let tableCellForPicturesHight: CGFloat = 475
+    static let minimumLineSpacingForSectionAt: CGFloat = 10
 }
 
 

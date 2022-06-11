@@ -43,6 +43,7 @@ class AlbumViewController: UIViewController {
         table.backgroundColor = .clear
         table.sectionHeaderHeight = 40
         table.rowHeight = UITableView.automaticDimension
+        table.autoresizingMask = [.flexibleHeight, .flexibleWidth]
 //        table.estimatedRowHeight = 30
 
         return table

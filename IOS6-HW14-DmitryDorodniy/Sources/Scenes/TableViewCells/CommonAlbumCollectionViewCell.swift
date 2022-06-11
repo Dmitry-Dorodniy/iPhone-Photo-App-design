@@ -12,7 +12,7 @@ class CommonAlbumCollectionTableViewCell: UITableViewCell {
 
     let cellsCountInRow: CGFloat = 1
     let collectionInsets: CGFloat = 18 //расстояние между ячейками
-    let collectionCellMarginFromPictureToCellBottom: CGFloat = 58
+    let collectionCellMarginFromPictureToCellBottom: CGFloat = 55
 
 //    private lazy var colorView: UIView = {
 //        let view = UIView(frame: CGRect(x: 0, y: 0, width: contentView.frame.width, height: 100))
@@ -23,8 +23,8 @@ class CommonAlbumCollectionTableViewCell: UITableViewCell {
     private lazy var albumCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        let album = UICollectionView(frame: CGRect(x: 0, y: 0, width: contentView.frame.width + collectionCellMarginFromPictureToCellBottom, height: Metric.tableCellForPicturesHight/2), collectionViewLayout: layout)
-//        let album = UICollectionView(frame: .zero, collectionViewLayout: layout)
+//        let album = UICollectionView(frame: CGRect(x: 0, y: 0, width: contentView.frame.width + collectionCellMarginFromPictureToCellBottom, height: Metric.tableCellForPicturesHight), collectionViewLayout: layout)
+        let album = UICollectionView(frame: .zero, collectionViewLayout: layout)
 
         album.showsHorizontalScrollIndicator = false
 
@@ -47,16 +47,16 @@ class CommonAlbumCollectionTableViewCell: UITableViewCell {
     //        return album
     //    }()
 
-    func configure(with: Cell) {
-
-    }
+//    func configure(with: Cell) {
+//
+//    }
 
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         //        self.addSubview(colorView)
 
-        self.addSubview(albumCollectionView)
+        contentView.addSubview(albumCollectionView)
 //        contentView.addSubview(albumCollectionView)
         albumCollectionView.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -112,7 +112,7 @@ extension CommonAlbumCollectionTableViewCell: UICollectionViewDelegate, UICollec
 
     //    зазор между линиями
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 3
+        return Metric.minimumLineSpacingForSectionAt
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

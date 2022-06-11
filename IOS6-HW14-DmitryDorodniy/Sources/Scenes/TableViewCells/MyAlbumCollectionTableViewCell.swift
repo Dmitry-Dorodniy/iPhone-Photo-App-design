@@ -12,7 +12,7 @@ class MyAlbumCollectionTableViewCell: UITableViewCell {
 
     let cellsCountInRow: CGFloat = 2
     let collectionInsets: CGFloat = 18 //расстояние между ячейками
-    let collectionCellMarginFromPictureToCellBottom: CGFloat = 58
+    let collectionCellMarginFromPictureToCellBottom: CGFloat = 55
 
    private lazy var container: UIStackView = {
        let view = UIStackView()
@@ -47,10 +47,10 @@ class MyAlbumCollectionTableViewCell: UITableViewCell {
 //        return album
 //    }()
 
-    func configure(with: Cell) {
-
-    }
-    
+//    func configure(with: Cell) {
+//
+//    }
+//
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -70,7 +70,7 @@ class MyAlbumCollectionTableViewCell: UITableViewCell {
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
             make.bottom.equalToSuperview()
-            make.height.equalTo(Metric.tableCellForPicturesHight)
+            make.height.equalTo(Metric.tableCellForPicturesHight + 31)
         }
     }
 
@@ -108,16 +108,16 @@ extension MyAlbumCollectionTableViewCell: UICollectionViewDelegate, UICollection
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
 
 
-        let cellWidth = contentView.frame.width / 2
+        let cellWidth = collectionView.frame.width / 2
         let cellHeight = cellWidth + collectionCellMarginFromPictureToCellBottom
-        let spacing = 3 * collectionInsets / 2
+        let spacing = CGFloat(28) //3 * collectionInsets / 2
         return CGSize(width: cellWidth - spacing,
                       height: cellHeight - collectionInsets * 2)
     }
 
     //    зазор между линиями
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 3
+        return Metric.minimumLineSpacingForSectionAt
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
