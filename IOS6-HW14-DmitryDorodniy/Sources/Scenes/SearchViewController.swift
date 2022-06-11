@@ -15,5 +15,4 @@ class SearchViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Поиск"
     }
-
 }
