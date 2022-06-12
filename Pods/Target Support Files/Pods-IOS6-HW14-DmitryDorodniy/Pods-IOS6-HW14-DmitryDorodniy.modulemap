@@ -1,0 +1,6 @@
+framework module Pods_IOS6_HW14_DmitryDorodniy {
+  umbrella header "Pods-IOS6-HW14-DmitryDorodniy-umbrella.h"
+
+  export *
+  module * { export * }
+}
